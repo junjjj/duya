@@ -1,0 +1,17 @@
+{
+  "name": "duya",
+  "version": "0.0.0",
+  "description": "搭建一个平台用于学习 `DDD` 架构模式和 `monorope` 项目结构，实现插件化方案",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --config vite.config.ts"
+  },
+  "author": "shuangyue <18795905365@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "3.4.5"
+  },
+  "devDependencies": {
+    "vite": "^5.0.11"
+  }
+}
