@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "importHelpers": true,
+    "strict": true,
+    "skipLibCheck": false,
+    "jsxImportSource": "vue",
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "vite/client",
+      /** Element Plus 的 Volar 插件支持 */
+      "element-plus/global",
+      "vitest"
+    ]
+  }
+}

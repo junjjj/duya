@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "搭建一个平台用于学习 `DDD` 架构模式和 `monorope` 项目结构，实现插件化方案",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite --config vite.config.ts"
   },
@@ -12,6 +13,8 @@
     "vue": "3.4.5"
   },
   "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@vitejs/plugin-vue": "^5.0.3",
     "vite": "^5.0.11"
   }
 }
