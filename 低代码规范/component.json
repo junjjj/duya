@@ -1,0 +1,33 @@
+{
+  "tag": "div",
+  "classes": ["container"],
+  "children": [
+    {
+      "tag": "h1",
+      "props": {
+        "title": "String"
+      }
+    },
+    {
+      "tag": "h2",
+      "state": {
+        "count": 150
+      }
+    },
+    {
+      "tag": "h3",
+      "props": {
+        "doubleCount": "count.value * 2"
+      }
+    },
+    {
+      "tag": "button",
+      "events": {
+        "click": {
+          "handleAddClick($event)": "count.value += 1",
+          "handleConsoleClick($event)": "console.log(count.value)"
+        }
+      }
+    }
+  ]
+}
