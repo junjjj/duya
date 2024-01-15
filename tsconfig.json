@@ -8,12 +8,20 @@
     "skipLibCheck": false,
     "jsxImportSource": "vue",
     "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "allowJs": true,
     "types": [
       "node",
       "vite/client",
       /** Element Plus 的 Volar 插件支持 */
       "element-plus/global",
-      "vitest"
+      "vitest",
+      "./types"
     ]
-  }
+  },
+  "include": [
+    "src"
+  ],
 }
