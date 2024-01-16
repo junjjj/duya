@@ -1,14 +1,26 @@
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
+import ElementPlus from 'unplugin-element-plus/vite'
 import path, { resolve } from 'path'
 
 export default defineConfig({
   plugins: [
     Vue(),
+    ElementPlus({
+      useSource: true,
+    }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "~/styles/element.scss" as *;`,
+      },
+    },
+  },
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
+      '@': resolve(__dirname, './src'),
+      '~/': `${path.resolve(__dirname, 'src')}/`,
     },
     extensions: ['.ts', '.js', '.vue'],
   },
