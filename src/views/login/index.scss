@@ -1,0 +1,34 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5%;
+  height: 100%;
+  .login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 328px;
+  }
+
+  .login-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .login-title {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: Futura;
+  }
+
+  .el-input {
+    height: 40px;
+  }
+
+  .el-input__wrapper {
+    border-radius: 10px;
+  }
+}

@@ -1,7 +1,10 @@
 @forward 'element-plus/theme-chalk/src/common/var.scss' with (
   $colors: (
     'primary': (
-      'base': #4e8475,
+      'base': #1677ff,
     ),
+  ),
+  $font-family: (
+    '': "Futura",
   ),
 );

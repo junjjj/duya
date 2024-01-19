@@ -1,0 +1,16 @@
+.root-container {
+  .root-fl {
+    display: flex;
+    max-width: 1208px;
+    margin: 0 auto;
+    column-gap: 40px;
+    &-item {
+      padding: 16px;
+      width: calc((100% - 96px) / 3);
+      min-height: 120px;
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}

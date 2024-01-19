@@ -1,0 +1,21 @@
+@import '@/styles/theme.scss';
+
+.exception {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &-img {
+    font-size: 400px;
+  }
+  &-box {
+    .btn {
+      color: $primary;
+      cursor: pointer;
+      transition: opacity .2s ease-in-out;
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+}
