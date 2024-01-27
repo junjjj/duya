@@ -1,4 +1,7 @@
 .root-container {
+  padding: 30px 0;
+  min-height: calc(100% - 50px);
+  box-sizing: border-box;
   .root-fl {
     display: flex;
     max-width: 1208px;

@@ -10,11 +10,31 @@ export default [
     redirect: '/dashboard',
     children: [
       {
-        path: 'dashboard',
+        path: 'dashboard', // 工作台首页
         component: () => import('@/views/dashboard/index.vue'),
         name: 'dashboard',
         meta: {
           title: '首页',
+        },
+      },
+      {
+        path: 'permission', // 权限中心
+        name: 'permission',
+        component: () => import('@/views/permission/layout/index.vue'),
+        children: [
+          {
+            path: '', // 默认权限首页
+            name: 'permissionIndex',
+            component: () => import('@/views/permission/index.vue'),
+          },
+          {
+            path: 'list',
+            name: 'permissionList',
+            component: () => import('@/views/permission/list/index.vue'),
+          }
+        ],
+        meta: {
+          meta: '权限中心',
         },
       },
       {

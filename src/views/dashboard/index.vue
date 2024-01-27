@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
+import Footer from '@/components/Footer/index.vue'
 import './index.scss'
 
 const router = useRouter()
@@ -40,4 +41,5 @@ const toRoute = menu => {
       </a>
     </div>
   </div>
+  <Footer />
 </template>
